@@ -1,0 +1,368 @@
+<!DOCTYPE html>
+<html lang="pt">
+<head>
+  <meta charset="UTF-8"/>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Home - Luís Dev</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css"/>
+  <link rel="stylesheet" href="css/styles.css">
+  <link rel="stylesheet" href="css01/all.min.css">
+  <link rel="stylesheet" href="css01/fontawesome.min.css">
+  <link rel="stylesheet" href="css/lateral.css">
+</head>
+<body>
+
+<header>
+
+  <!-- Logo -->
+  <a href="index.html" class="hdr-logo">Luís <span>C.</span> Francisco</a>
+
+  <!-- Direita -->
+  <div class="hdr-right">
+    <a href="#contacto" class="hdr-cta">
+      <i class="fa-solid fa-phone"></i> Contactar Dev
+    </a>
+
+    <!-- Avatar -->
+    <div class="profile-wrapper">
+      <button class="profile-btn" id="profileTrigger" aria-label="Menu de perfil">
+        <img
+          src="imag/perfil.PNG"
+          alt="Foto de perfil"
+          onerror="this.style.display='none'"
+        />
+      </button>
+
+      <!-- Dialog -->
+      <div class="profile-dialog" id="profileDialog" role="dialog" aria-label="Menu de perfil">
+
+        <!-- Cabeçalho -->
+        <div class="dlg-head">
+          <img
+            class="dlg-photo"
+            src="imag/Perfil_Oficiall.PNG"
+            alt="Foto de perfil"
+            onerror="this.style.display='none'"
+          />
+          <div class="dlg-info">
+            <h4>Luís Francisco</h4>
+            <p>luiscfrancisco33@gmail.com</p>
+            <div class="dlg-badge">
+              <i class="fa-solid fa-circle"></i>
+              Gestor de Anúncios
+            </div>
+          </div>
+        </div>
+
+        <!-- Stats -->
+        <div class="dlg-stats">
+          <div class="dlg-stat">
+            <strong>24</strong>
+            <span>Anúncios</span>
+          </div>
+          <div class="dlg-stat">
+            <strong>1.2k</strong>
+            <span>Clientes</span>
+          </div>
+          <div class="dlg-stat">
+            <strong>98%</strong>
+            <span>Satisfação</span>
+          </div>
+        </div>
+
+        <!-- Menu -->
+        <ul class="dlg-menu">
+          <li>
+            <a href="profile-header.html">
+              <i class="fa-solid fa-user dlg-icon"></i>
+              Meu Perfil
+            </a>
+          </li>
+          <li>
+            <a href="#" style="cursor: no-drop;">
+              <i class="fa-solid fa-chart-line dlg-icon"></i>
+              Painel de Controlo
+            </a>
+          </li>
+          <li>
+            <a href="anuncio.html" style="cursor: no-drop;">
+              <i class="fa-solid fa-bullhorn dlg-icon"></i>
+              Meus Anúncios
+            </a>
+          </li>
+          <li>
+            <a href="#" style="cursor: no-drop;">
+              <i class="fa-solid fa-bell dlg-icon"></i>
+              Notificações
+              <span class="notif-badge">3</span>
+            </a>
+          </li>
+          <div class="dlg-sep"></div>
+          <li>
+            <a href="privacidade.html">
+              <i class="fa-solid fa-shield-halved dlg-icon"></i>
+              Política de Privacidade
+            </a>
+          </li>
+          <li>
+            <a href="#" style="cursor: no-drop;">
+              <i class="fa-solid fa-gear dlg-icon"></i>
+              Configurações
+            </a>
+          </li>
+          <div class="dlg-sep"></div>
+          <li>
+            <button class="dlg-logout" style="cursor: no-drop;">
+              <i class="fa-solid fa-arrow-right-from-bracket dlg-icon"></i>
+              Terminar Sessão
+            </button>
+          </li>
+        </ul>
+
+      </div>
+    </div>
+  </div>
+
+</header>
+
+<!-- Menu Lateral -->
+<nav class="sidebar" id="sidebar">
+        <div class="menu-btn" id="btn-toggle">
+            <i class="fas fa-bars"></i>
+        </div>
+        
+        <ul class="nav-list">
+            <li class="nav-item">
+                <a href="index.html" class="nav-link active">
+                    <i class="fas fa-house"></i>
+                    <span>Home</span>
+                </a>
+            </li>
+            <li class="nav-item">
+                <a href="sobre.html" class="nav-link">
+                    <i class="fas fa-user"></i>
+                    <span>Sobre</span>
+                </a>
+            </li>
+            <li class="nav-item">
+                <a href="serviços.html" class="nav-link">
+                    <i class="fas fa-briefcase"></i>
+                    <span>Serviços</span>
+                </a>
+            </li>
+            <li class="nav-item">
+                <a href="anuncio.html" class="nav-link">
+                    <i class="fas fa-bullhorn"></i>
+                    <span>Anucie</span>
+                </a>
+            </li>
+            <li class="nav-item">
+                <a href="privacidade.html" class="nav-link">
+                    <i class="fa-solid fa-shield-halved"></i>
+                    <span>Privacidade</span>
+                </a>
+            </li>
+        </ul>
+</nav>
+
+<main>
+
+  <section style="background-image: url(imag/fundo.1.JPG);" class="home"> <!--Abertura da primeira seção-->
+  <div class="container-home">
+      <div class="content-home">
+       <h1>
+          Impulsiona seu negócio com estratégias de tráfego pago que geram resultados reais.
+        </h1>
+        <p>
+         Aqui começa a transformação da sua presença digital. Explore os meus serviços e descubra como posso impulsionar o seu projecto, seu negócio. Pronto para dar o próximo passo? Fale comigo agora!
+        </p>
+
+        <a href="#cases" class="btn">
+          Ver resultados
+        </a>
+        
+    </div>
+  </div>
+  </div>
+  </section> <!--Fechamento da primeira seção-->
+
+      <!-- Sobre Section -->
+    <section class="about-section">
+      <div class="about-text">
+        <h2>Sabias Que?</h2>
+        <p>Negócios sem gestão profissional perdem em média 30% do seu faturamento com processos ineficientes, má precificação e falta de posicionamento? A consultoria existe para transformar esse prejuízo em lucro real.</p>
+
+        <p>
+          Seu negócio merece mais do que sobreviver — merece crescer.
+          Não espere perder mais para buscar ajuda. Fale agora com um especialista e receba um diagnóstico personalizado para o seu negócio.
+        </p>
+
+      </div> 
+
+      <div class="about-image">
+        <img src="imag/Imagem 01.jpg" alt="Luis Francisco">
+      </div>
+    </section>
+
+  <section class="section-card"><!--Abertura da segunda seção-->
+  <div class="container-icon">
+
+    <div class="service-card">
+    <div class="service-icon">
+      <img src="imag/line-chart.gif" alt="icon animado" class="icon-animado">
+    </div>
+    <h3>Cresça com estratégia </h3>
+    <p>Alcance resultados reais com campanhas que impulsionam o seu negócio na direção certa. A cada clique mais perto do seu objetivo. </p>
+   </div>
+
+    <div class="service-card">
+    <div class="service-icon"><img src="imag/target.gif" alt="icon animado" class="icon-animado">
+    </div>
+    <h3>Precisão que Converte</h3>
+    
+      <p>Atinjo o público certo, na hora certa. Com segmentação inteligente, cada anúncio chega a quem realmente tem interesse no que você oferece — gerando mais conversões com menos desperdício. 
+      </p>
+    </div>
+
+    <div class="service-card">
+    <div class="service-icon"><img src="imag/view.gif" alt="icon animado" class="icon-animado"></div>
+    <h3>Visibilidade que Gera Impacto</h3>
+    <p>Aumente a presença da sua marca com campanhas que realmente chamam atenção. Seja visto por quem importa.</p>
+    </div>
+    
+    <div class="service-card">
+    <div class="service-icon"><img src="imag/worldwide.gif" alt="icon animado" class="icon-animado"></div>
+    <h3>Conecte-se com o Mundo</h3>
+          <p>Alcance global com estratégias certeiras. Expanda os horizontes do seu negócio e leve a sua marca a novos mercados com campanhas pensadas para gerar resultados onde o seu cliente estiver.</p>
+    </div>
+  </div>
+  </section> <!--Fechamento da segunda seção-->
+
+  <section  class="section-port" id="cases">
+
+            <div class="reveal" style="text-align: center;padding: 1rem;">
+                <h2 style="margin-bottom: 0.8rem; font-size: 1.8rem; font-weight: 500;">Anucie Seu Negócio <span style="color: #45936c;">Comigo!</span></h2>
+                <p style="color: #000; padding: 0.2rem;"> E conprove resultados reais que falam mais alto que palavras.</p>
+            </div>
+
+            <div class="portfolio-grid">
+                <!-- Case 1 -->
+                <div class="case-card reveal">
+                    <img src="imag/anuncio.2.JPG" class="case-img" alt="Case Ecommerce">
+                    <div class="case-overlay">
+                        <h3>Resultados visíveis</h3>
+                        <p>Aumente suas vendas e engajamento com campanhas personalizadas e eficazes.<p>
+                    <div class="case-stat">Com 10% de desconto.</div>
+                    </div>
+                </div>
+                <!-- Case 2 -->
+                <div class="case-card reveal" style="transition-delay: 0.2s;">
+                    <img src="imag/Imagem WhatsApp 2025-11-15 às 23.24.58_00b0b0be.jpg" class="case-img" alt="Case SaaS">
+                    <div class="case-overlay">
+                        <h3>Alcance o público certo</h3>
+                        <p>Com minha estratégias, seus anúncios chegam ao público certo, no momento certo.<p>
+                    <div class="case-stat">Comece hoje!</div>
+                    </div>
+                </div>
+            </div>
+  </section>
+
+</main>
+
+<footer>
+
+  <div class="formulario-contacto" id="contacto">
+    <div style="text-align: center; max-width: 600px; margin: 0 auto; padding: 2rem;">
+      <h2 class="contato-h2" style="margin-bottom: 0.3rem; color: #fff;">
+        Pronto para o <span style="color: #45936c">Próximo Nível?</span>
+      </h2>
+      <p style=" margin-bottom: 0.5rem; color: #fff; font-weight: 400; padding: 0.3rem;">
+        Deixe seus dados e eu entrarei em contato em até 24 horas.
+      </p>
+
+      <form
+        action="https://formspree.io/f/xjgeqlyg"
+        method="POST"
+        id="contactForm" style="display: grid; gap: 15px;"
+      >
+
+        <input type="text" name="text" placeholder="Seu nome completo" required>
+        
+        <input type="email" name="email" placeholder="Seu e-mail" required>
+
+      <textarea rows="2" name="message" placeholder="Digite sua mensagem..."></textarea>
+
+        <button type="submit" class="btn_2 btn-primary">
+          Agendar Meu Diagnóstico
+        </button>
+      </form>
+    </div>
+  </div>
+
+  <div class="footer-container">
+  <div class="footer-content ">
+    <h1>Redes Sociais</h1>
+    <div class="icones">
+      <a href="https://wa.me/244955640338"><img src="imag/whatzapp-icon.png" alt="whatzapp-icon" /></a>
+
+      <a href="https://www.facebook.com/luis.c.francisco.lcf"><img src="imag/facebook-icon.png" alt="facebook-icon" /></a>
+
+      <a href="https://www.linkedin.com/in/luís-c-francisco"><img src="imag/linkedlin-icon.png" alt="linkedlin-icon"/> </a>      
+    </div>
+  </div>
+  <div class="footer-content">
+    <h1>Links Rápidos</h1>
+    <ul>
+      <li><a href="sobre.html">Sobre</a></li>
+      <li><a href="serviços.html">Serviços</a></li>
+      <li><a href="anuncio.html">Anuncie</a></li>
+      <li><a href="privacidade.html">Privacidade</a></li>
+    </ul>
+  </div>
+
+  <div class="footer-content ">
+    <h1>Contacta-me</h1>
+    <div class="footer-social">
+      <img src="imag/phone-caling-icon.png" alt="phone-icon" width="20px" />
+      <p>(+244) 955 640 338</p>
+      <img src="imag/email-icon.png" alt="email-icon" width="24px" />
+      <p>luiscfrancisco33@gmail.com</p>
+    </div>
+  </div>
+  </div>
+    
+  <div class="div-reservado">
+    <P class="p-reservado">&copy; 2026 Luís Dev - Todos Direitos Reservados.</P>
+  </div>
+
+  <div class="div-reservado hiden">
+    <p></p>
+  </div>  
+  
+  <div class="div-reservado hiden">
+    <p></p>
+  </div>
+
+</footer>
+
+</div>
+  <a href="https://wa.me/244955640338"><img src="imag/icons8-whatsapp.gif" alt="WhatsApp" class="btn-whatt"></a>
+</div>
+
+  <!-- Mobile Nav -->
+  <nav class="mobile-nav">
+    <ul>
+      <li class="active"><a href="index.html"><i class="fa-solid fa-house"></i><span>Home</span></a></li>
+      <li><a href="sobre.html"><i class="fa-solid fa-user-tie"></i><span>Sobre</span></a></li>
+      <li><a href="serviços.html"><i class="fa-solid fa-briefcase"></i><span>Serviços</span></a></li>
+      <li><a href="anuncio.html"><i class="fa-solid fa-bullhorn"></i><span>Anuncie</span></a></li>
+      <li><a href="privacidade.html"><i class="fa-solid fa-shield-halved"></i><span>Privacidade</span></a></li>
+    </ul>
+  </nav>
+
+
+<script src="scrip/perfil.js"></script>
+<script src="scrip/lateral.js"></script>
+
+</body>
+</html>

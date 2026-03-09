@@ -1,0 +1,109 @@
+
+
+        body {
+            display: flex;
+            width: 100%;
+            height: 100vh;
+            overflow-x: hidden;
+        }
+
+        /* --- Menu Lateral --- */
+        .sidebar {
+            width: 70px;
+            height: 100vb;
+            background-color: #102C26;
+            position: fixed;
+            transition:  all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+            display: flex;
+            flex-direction: column;
+            overflow: hidden;
+            z-index: 1000;
+            transition: .3s;
+        }
+
+        /* Quando o menu está expandido */
+        .sidebar.expand {
+            width: 240px;
+        }
+
+        .menu-btn {
+            padding: 20px;
+            cursor: pointer;
+            color: #ffffffe3;
+            font-size: 25px;
+            display: flex;
+            justify-content: center;
+            width: 100%;
+            background-color: #102C26;
+            height: 65px;
+            border-bottom:  1px solid #adb5bd1a;
+            transition: .5s;
+        }
+
+        .sidebar.expand .menu-btn {
+            justify-content: flex-start;
+            padding-left: 10px;
+        }
+
+        .nav-list {
+            list-style: none;
+            margin-top: 15px;
+        }
+
+        .nav-item {
+            width: 100%;
+        }
+
+        .nav-link {
+            display: flex;
+            align-items: center;
+            height: 80px;
+            text-decoration: none;
+            color:  #adb5bd;
+            transition: 0.2s;
+            border-left: 4px solid transparent;
+            border-radius: 5px;
+            white-space: nowrap;
+        }
+
+        .nav-link i {
+            min-width: 70px;
+            display: flex;
+            justify-content: center;
+            font-size: 20px;
+        }
+
+        .fa-house{
+            font-weight: 100;
+        }
+
+        .nav-link span {
+            opacity: 0;
+            visibility: hidden;
+            transition: 0.2s;
+            font-weight: 400;
+        }
+
+        .sidebar.expand .nav-link span {
+            opacity: 1;
+            visibility: visible;
+        }
+
+        /* Estados Hover e Ativo */
+        .nav-link:hover {
+            background-color: #a09d9d18;
+            color: #45936C;
+        }
+
+        .nav-link.active {
+            color: #ffffff;
+            border-left-color: #45936C;
+            background-color: #a09d9d18;
+            border-radius: 5px;
+        }
+
+        /* Ajusta o conteúdo quando a sidebar expande */
+
+        .sidebar.expand ~ .main-content {
+            margin-left: 240px;
+        }

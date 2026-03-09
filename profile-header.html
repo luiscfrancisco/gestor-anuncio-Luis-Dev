@@ -1,0 +1,404 @@
+<!DOCTYPE html>
+<html lang="pt">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Perfil - Luís Dev</title>
+  <style>
+    *, *::before, *::after {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+    }
+
+    body {
+      font-family: 'Segoe UI', Tahoma;
+      background: #f4f1ec;
+      min-height: 100vh;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      padding: 2rem;
+    }
+
+    header {
+      background: #ffffff;
+      border: 1px solid #e2ddd6;
+      border-radius: 15px;
+      max-width: 780px;
+      width: 100%;
+      padding: 3rem 3.5rem;
+      display: flex;
+      align-items: center;
+      gap: 3rem;
+      box-shadow: 0 2px 24px rgba(0,0,0,0.06);
+      position: relative;
+      overflow: hidden;
+    }
+
+    header::before {
+      content: '';
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 4px;
+      height: 100%;
+      background: #1a1a1aad;
+    }
+
+
+    header a {
+      color: red;
+      background-color: #c8c2b8;
+
+    }
+ 
+    .fechar {
+      position: absolute;
+      top: 10px;
+      right: 10px;
+    }
+
+    .avatar-wrapper {
+      position: relative;
+      flex-shrink: 0;
+    }
+
+    .avatar {
+      width: 110px;
+      height: 110px;
+      border-radius: 50%;
+      object-fit: cover;
+      display: block;
+      background: #e8e3db;
+      border: 3px solid #1a1a1a;
+      cursor: pointer;
+      transition: transform 0.3s ease, box-shadow 0.3s ease;
+    }
+
+    .avatar:hover {
+      transform: scale(1.04);
+      box-shadow: 0 8px 24px rgba(0,0,0,0.15);
+    }
+
+    .avatar-initials {
+      width: 110px;
+      height: 110px;
+      border-radius: 50%;
+      background: #1a1a1a;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-family: 'Playfair Display', serif;
+      font-size: 2rem;
+      color: #f4f1ec;
+      font-weight: 600;
+      border: 3px solid #1a1a1a;
+      cursor: pointer;
+      transition: transform 0.3s ease, box-shadow 0.3s ease;
+      user-select: none;
+    }
+
+    .avatar-initials:hover {
+      transform: scale(1.04);
+      box-shadow: 0 8px 24px rgba(0,0,0,0.15);
+    }
+
+    .status-dot {
+      position: absolute;
+      bottom: 6px;
+      right: 6px;
+      width: 14px;
+      height: 14px;
+      border-radius: 50%;
+      background: #3aac5d;
+      border: 2px solid #ffffff;
+    }
+
+    .info {
+      flex: 1;
+      display: flex;
+      flex-direction: column;
+      gap: 0.5rem;
+    }
+
+    .label {
+      font-size: 0.7rem;
+      letter-spacing: 0.18em;
+      text-transform: uppercase;
+      color: #9e9587;
+      font-weight: 500;
+    }
+
+    h1 {
+      font-size: 2rem;
+      font-weight: 600;
+      color: #1a1a1a;
+      line-height: 1.1;
+    }
+
+    .role {
+      font-size: 0.95rem;
+      color: #5a5248;
+      font-weight: 400;
+      margin-top: 0.15rem;
+    }
+
+    .divider {
+      width: 32px;
+      height: 1px;
+      background: #c8c2b8;
+      margin: 0.75rem 0;
+    }
+
+    .meta {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 1rem;
+    }
+
+    .meta-item {
+      display: flex;
+      align-items: center;
+      gap: 0.4rem;
+      font-size: 0.82rem;
+      color: #6b6359;
+      font-weight: 400;
+    }
+
+    .meta-item svg {
+      width: 13px;
+      height: 13px;
+      stroke: #9e9587;
+      flex-shrink: 0;
+    }
+
+    .actions {
+      display: flex;
+      flex-direction: column;
+      gap: 0.6rem;
+      align-items: flex-end;
+      flex-shrink: 0;
+    }
+
+    .btn {
+      display: inline-flex;
+      align-items: center;
+      gap: 0.5rem;
+      padding: 0.55rem 1.25rem;
+      border-radius: 2px;
+      font-family: 'DM Sans', sans-serif;
+      font-size: 0.8rem;
+      font-weight: 500;
+      cursor: pointer;
+      transition: all 0.2s ease;
+      border: none;
+      text-decoration: none;
+      letter-spacing: 0.02em;
+      white-space: nowrap;
+    }
+
+    .btn-primary {
+      background: #1a1a1a;
+      color: #f4f1ec;
+    }
+
+    .btn-primary:hover {
+      background: #333333;
+      transform: translateY(-1px);
+    }
+
+    .btn-secondary {
+      background: transparent;
+      color: #1a1a1a;
+      border: 1px solid #c8c2b8;
+    }
+
+    .btn-secondary:hover {
+      border-color: #1a1a1a;
+      background: #f9f6f2;
+      transform: translateY(-1px);
+    }
+
+    .btn svg {
+      width: 13px;
+      height: 13px;
+    }
+
+    .tags {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 0.4rem;
+      margin-top: 0.25rem;
+    }
+
+    .tag {
+      font-size: 0.7rem;
+      padding: 0.2rem 0.6rem;
+      background: #f4f1ec;
+      color: #5a5248;
+      border: 1px solid #e2ddd6;
+      border-radius: 2px;
+      letter-spacing: 0.05em;
+      font-weight: 500;
+    }
+
+    .toast {
+      position: fixed;
+      bottom: 2rem;
+      left: 50%;
+      transform: translateX(-50%) translateY(80px);
+      background: #1a1a1a;
+      color: #f4f1ec;
+      padding: 0.7rem 1.4rem;
+      border-radius: 2px;
+      font-size: 0.82rem;
+      font-family: 'DM Sans', sans-serif;
+      font-weight: 400;
+      transition: transform 0.35s cubic-bezier(0.34, 1.56, 0.64, 1);
+      z-index: 999;
+      pointer-events: none;
+    }
+
+    .toast.show {
+      transform: translateX(-50%) translateY(0);
+    }
+
+    @media (max-width: 600px) {
+      header {
+        flex-direction: column;
+        padding: 2.5rem 2rem;
+        gap: 1.75rem;
+        text-align: center;
+        align-items: center;
+      }
+
+      header::before {
+        width: 100%;
+        height: 4px;
+      }
+
+      .actions {
+        flex-direction: row;
+        align-items: center;
+        flex-wrap: wrap;
+        justify-content: center;
+      }
+
+      .meta {
+        justify-content: center;
+      }
+
+      .tags {
+        justify-content: center;
+      }
+    }
+
+    .avatar-wrapper img{
+      width: 100px;
+      height: 100px;
+      border-radius: 50%;
+      object-fit: cover;
+    }
+  </style>
+</head>
+<body>
+
+  <header>
+    <div class="avatar-wrapper" id="avatarWrapper">
+      <img src="imag/Perfil_Oficiall.PNG" alt="" class="Foto_Perfil">
+      <span class="status-dot" title="Disponível"></span>
+    </div>
+
+    <div class="info">
+      <span class="label">Perfil Profissional</span>
+      <h1 id="nameEl">Luís C. Francisco</h1>
+      <p class="role" id="roleEl">Desenvolvedor Web & Gestor de Anúncios - Luanda, Angola </p>
+      <div class="divider"></div>
+      <div class="meta">
+        <span class="meta-item">
+          <svg fill="none" stroke-width="1.8" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+            <path d="M21.75 6.75v10.5a2.25 2.25 0 01-2.25 2.25H4.5A2.25 2.25 0 012.25 17.25V6.75M21.75 6.75A2.25 2.25 0 0019.5 4.5H4.5A2.25 2.25 0 002.25 6.75M21.75 6.75l-9.75 6.75L2.25 6.75" stroke-linecap="round" stroke-linejoin="round"/>
+          </svg>
+          luiscfrancisco33@gmail.com
+        </span>
+        <span class="meta-item">
+          <svg fill="none" stroke-width="1.8" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+            <path d="M2.25 6.75c0 8.284 6.716 15 15 15h2.25a2.25 2.25 0 002.25-2.25v-1.372c0-.516-.351-.966-.852-1.091l-4.423-1.106c-.44-.11-.902.055-1.173.417l-.97 1.293c-.282.376-.769.542-1.21.38a12.035 12.035 0 01-7.143-7.143c-.162-.441.004-.928.38-1.21l1.293-.97c.363-.271.527-.734.417-1.173L6.963 3.102a1.125 1.125 0 00-1.091-.852H4.5A2.25 2.25 0 002.25 6.75z" stroke-linecap="round" stroke-linejoin="round"/>
+          </svg>
+          +244 955 640 338
+        </span>
+        <span class="meta-item">
+          <svg fill="none" stroke-width="1.8" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+            <path d="M12 21a9.004 9.004 0 008.716-6.747M12 21a9.004 9.004 0 01-8.716-6.747M12 21c2.485 0 4.5-4.03 4.5-9S14.485 3 12 3m0 18c-2.485 0-4.5-4.03-4.5-9S9.515 3 12 3m0 0a8.997 8.997 0 017.843 4.582M12 3a8.997 8.997 0 00-7.843 4.582m15.686 0A11.953 11.953 0 0112 10.5c-2.998 0-5.74-1.1-7.843-2.918m15.686 0A8.959 8.959 0 0121 12c0 .778-.099 1.533-.284 2.253M3.284 14.253A8.959 8.959 0 013 12c0-1.016.167-1.994.457-2.918" stroke-linecap="round" stroke-linejoin="round"/>
+          </svg>
+          linkedin.com/luiscfrancisco
+        </span>
+      </div>
+      <div class="tags">
+        <span class="tag">HTML</span>
+        <span class="tag">Css</span>
+        <span class="tag">JavaScript</span>
+        <span class="tag">React</span>
+        <span class="tag">Node.js</span>
+        <span class="tag">Meta Ads</span>
+        <span class="tag">UI UX</span>
+      </div>
+    </div>
+
+    <div class="actions">
+      <button class="btn btn-primary" onclick="handleContact()">
+        <svg fill="none" stroke="currentColor" stroke-width="1.8" viewBox="0 0 24 24">
+          <path d="M21.75 6.75v10.5a2.25 2.25 0 01-2.25 2.25H4.5A2.25 2.25 0 012.25 17.25V6.75M21.75 6.75A2.25 2.25 0 0019.5 4.5H4.5A2.25 2.25 0 002.25 6.75M21.75 6.75l-9.75 6.75L2.25 6.75" stroke-linecap="round" stroke-linejoin="round"/>
+        </svg>
+        Contactar
+      </button>
+      <button class="btn btn-secondary" onclick="handleShare()">
+        <svg fill="none" stroke="currentColor" stroke-width="1.8" viewBox="0 0 24 24">
+          <path d="M7.217 10.907a2.25 2.25 0 100 2.186m0-2.186c.18.324.283.696.283 1.093s-.103.77-.283 1.093m0-2.186l9.566-5.314m-9.566 7.5l9.566 5.314m0 0a2.25 2.25 0 103.935 2.186 2.25 2.25 0 00-3.935-2.186zm0-12.814a2.25 2.25 0 103.933-2.185 2.25 2.25 0 00-3.933 2.185z" stroke-linecap="round" stroke-linejoin="round"/>
+        </svg>
+        Partilhar
+      </button>
+    </div>
+
+    <a href="index.html" class="btn btn-secondary_1 fechar">
+      <svg fill="none" stroke="currentColor" stroke-width="1.8" viewBox="0 0 24   24" xmlns="http://www.w3.org/2000/svg">
+            <path d="M15.75 9V5.25A2.25 2.25 0 0013.5 3h-6a2.25 2.25 0 00-2.25 2.25v13.5A2.25 2.25 0 007.5 21h6a2.25 2.25 0 002.25-2.25V15M18 15l3-3m0 0l-3-3m3 3H9" stroke-linecap="round" stroke-linejoin="round"/>
+      </svg>
+        Sair
+    </a>
+
+  </header>
+
+  <div class="toast" id="toast">
+    
+  </div>
+
+  <script>
+    function showToast(msg) {
+      const t = document.getElementById('toast');
+      t.textContent = msg;
+      t.classList.add('show');
+      setTimeout(() => t.classList.remove('show'), 2500);
+    }
+
+    function handleContact() {
+      window.location.href = 'mailto:luiscfrancisco33@gmail.com';
+      showToast('A abrir cliente de email…');
+    }
+
+    function handleShare() {
+      const text = 'Luís C. Francisco — Desenvolvedor Web';
+      if (navigator.share) {
+        navigator.share({ title: text, url: window.location.href });
+      } else if (navigator.clipboard) {
+        navigator.clipboard.writeText(window.location.href);
+        showToast('Link copiado para a área de transferência');
+      } else {
+        showToast('Partilha não suportada neste browser');
+      }
+    }
+
+  </script>
+</body>
+</html>

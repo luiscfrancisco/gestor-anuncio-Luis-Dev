@@ -1,0 +1,434 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Política de Privacidade — Luís Dev</title><link rel="stylesheet" href="css/politica.css">
+  <link rel="stylesheet" href="css01/all.min.css">
+  <link rel="stylesheet" href="css01/fontawesome.min.css">
+  <link rel="stylesheet" href="css/lateral.css">
+  <link rel="stylesheet" href="css/styles.css">
+
+</head>
+<body>
+
+<header>
+
+  <!-- Logo -->
+  <a href="index.html" class="hdr-logo">Luís <span>C.</span> Francisco</a>
+
+  <!-- Direita -->
+  <div class="hdr-right">
+    <a href="#contacto" class="hdr-cta">
+      <i class="fa-solid fa-phone"></i> Contactar Dev
+    </a>
+
+    <!-- Avatar -->
+    <div class="profile-wrapper">
+      <button class="profile-btn" id="profileTrigger" aria-label="Menu de perfil">
+        <img
+          src="imag/perfil.PNG"
+          alt="Foto de perfil"
+          onerror="this.style.display='none'"
+        />
+      </button>
+
+      <!-- Dialog -->
+      <div class="profile-dialog" id="profileDialog" role="dialog" aria-label="Menu de perfil">
+
+        <!-- Cabeçalho -->
+        <div class="dlg-head">
+          <img
+            class="dlg-photo"
+            src="imag/Perfil_Oficiall.PNG"
+            alt="Foto de perfil"
+            onerror="this.style.display='none'"
+          />
+          <div class="dlg-info">
+            <h4>Luís Francisco</h4>
+            <p>luiscfrancisco33@gmail.com</p>
+            <div class="dlg-badge">
+              <i class="fa-solid fa-circle"></i>
+              Gestor de Anúncios
+            </div>
+          </div>
+        </div>
+
+        <!-- Stats -->
+        <div class="dlg-stats">
+          <div class="dlg-stat">
+            <strong>24</strong>
+            <span>Anúncios</span>
+          </div>
+          <div class="dlg-stat">
+            <strong>1.2k</strong>
+            <span>Clientes</span>
+          </div>
+          <div class="dlg-stat">
+            <strong>98%</strong>
+            <span>Satisfação</span>
+          </div>
+        </div>
+
+        <!-- Menu -->
+        <ul class="dlg-menu">
+          <li>
+            <a href="profile-header.html">
+              <i class="fa-solid fa-user dlg-icon"></i>
+              Meu Perfil
+            </a>
+          </li>
+          <li>
+            <a href="#" style="cursor: no-drop;">
+              <i class="fa-solid fa-chart-line dlg-icon"></i>
+              Painel de Controlo
+            </a>
+          </li>
+          <li>
+            <a href="anuncio.html" style="cursor: no-drop;">
+              <i class="fa-solid fa-bullhorn dlg-icon"></i>
+              Meus Anúncios
+            </a>
+          </li>
+          <li>
+            <a href="#" style="cursor: no-drop;">
+              <i class="fa-solid fa-bell dlg-icon"></i>
+              Notificações
+              <span class="notif-badge">3</span>
+            </a>
+          </li>
+          <div class="dlg-sep"></div>
+          <li>
+            <a href="privacidade.html">
+              <i class="fa-solid fa-shield-halved dlg-icon"></i>
+              Política de Privacidade
+            </a>
+          </li>
+          <li>
+            <a href="#" style="cursor: no-drop;">
+              <i class="fa-solid fa-gear dlg-icon"></i>
+              Configurações
+            </a>
+          </li>
+          <div class="dlg-sep"></div>
+          <li>
+            <button class="dlg-logout" style="cursor: no-drop;">
+              <i class="fa-solid fa-arrow-right-from-bracket dlg-icon"></i>
+              Terminar Sessão
+            </button>
+          </li>
+        </ul>
+   
+
+      </div>
+    </div>
+  </div>
+
+</header>
+
+<!-- Menu Lateral -->
+<nav class="sidebar" id="sidebar">
+        <div class="menu-btn" id="btn-toggle">
+            <i class="fas fa-bars"></i>
+        </div>
+        
+        <ul class="nav-list">
+            <li class="nav-item">
+                <a href="index.html" class="nav-link">
+                    <i class="fas fa-house"></i>
+                    <span>Home</span>
+                </a>
+            </li>
+            <li class="nav-item">
+                <a href="sobre.html" class="nav-link">
+                    <i class="fas fa-user"></i>
+                    <span>Sobre</span>
+                </a>
+            </li>
+            <li class="nav-item">
+                <a href="serviços.html" class="nav-link">
+                    <i class="fas fa-briefcase"></i>
+                    <span>Serviços</span>
+                </a>
+            </li>
+            <li class="nav-item">
+                <a href="anuncio.html" class="nav-link">
+                    <i class="fas fa-bullhorn"></i>
+                    <span>Anucie</span>
+                </a>
+            </li>
+            <li class="nav-item">
+                <a href="privacidade.html" class="nav-link active">
+                    <i class="fa-solid fa-shield-halved"></i>
+                    <span>Privacidade</span>
+                </a>
+            </li>
+        </ul>
+</nav>
+
+  <!-- Main -->
+  <main>
+
+    <!-- Hero -->
+    <div class="priv-hero">
+      <div class="priv-tag"><i class="fa-solid fa-shield-halved"></i> Política de Privacidade</div>
+      <h1>A tua privacidade é a nossa prioridade.</h1>
+      <p>Valorizamos a sua confiança e comprometemo-nos a proteger as suas informações pessoais com total transparência e responsabilidade.</p>
+      <div class="priv-meta">
+        <span><i class="fa-solid fa-calendar-check"></i> Actualizada em Janeiro de 2026</span>
+        <span><i class="fa-solid fa-clock"></i> Leitura: ~5 minutos</span>
+        <span><i class="fa-solid fa-globe"></i> Aplicável em Angola</span>
+      </div>
+    </div>
+
+    <!-- Título -->
+    <h2 class="section-title">O que <span>precisa de saber</span></h2>
+
+    <!-- Cards de política -->
+    <div class="policy-grid">
+
+      <!-- 01 -->
+      <div class="policy-card">
+        <div class="card-head">
+          <div class="card-icon"><i class="fa-solid fa-building"></i></div>
+          <div class="card-meta">
+            <span class="card-num">01 — Identificação</span>
+            <h2>Quem Somos</h2>
+          </div>
+        </div>
+        <p>Esta é uma plataforma de gestão de anúncios e tráfego pago, operada por Luís C. Francisco, com sede em Angola. Actuamos como responsáveis pelo tratamento dos dados pessoais recolhidos através deste website.</p>
+        <div class="highlight-box">
+          <i class="fa-solid fa-circle-info"></i>
+          <p><strong>Responsável pelo tratamento:</strong> Luís C. Francisco &nbsp;|&nbsp; <strong>Email:</strong> luiscfrancisco33@gmail.com</p>
+        </div>
+      </div>
+
+      <!-- 02 -->
+      <div class="policy-card">
+        <div class="card-head">
+          <div class="card-icon"><i class="fa-solid fa-database"></i></div>
+          <div class="card-meta">
+            <span class="card-num">02 — Dados Recolhidos</span>
+            <h2>Que Dados Recolhemos</h2>
+          </div>
+        </div>
+        <p>Recolhemos apenas os dados estritamente necessários para prestar os nossos serviços. Estes incluem:</p>
+        <ul>
+          <li>Nome completo e endereço de e-mail (formulários de contacto)</li>
+          <li>Número de telefone (quando fornecido voluntariamente)</li>
+          <li>Dados de navegação (endereço IP, páginas visitadas, tempo de sessão)</li>
+          <li>Preferências e interacções com os nossos anúncios e conteúdos</li>
+          <li>Informações fornecidas em mensagens e solicitações de orçamento</li>
+        </ul>
+      </div>
+
+      <!-- 03 -->
+      <div class="policy-card">
+        <div class="card-head">
+          <div class="card-icon"><i class="fa-solid fa-bullseye"></i></div>
+          <div class="card-meta">
+            <span class="card-num">03 — Finalidade</span>
+            <h2>Para Que Usamos os Dados</h2>
+          </div>
+        </div>
+        <p>Os dados recolhidos são utilizados exclusivamente para:</p>
+        <ul>
+          <li>Responder às suas solicitações e mensagens de contacto</li>
+          <li>Elaborar propostas e orçamentos personalizados</li>
+          <li>Optimizar as campanhas publicitárias geridas para os nossos clientes</li>
+          <li>Melhorar continuamente a experiência de navegação no website</li>
+          <li>Enviar comunicações relevantes (apenas com o seu consentimento)</li>
+          <li>Cumprir obrigações legais e regulatórias aplicáveis</li>
+        </ul>
+      </div>
+
+      <!-- 04 -->
+      <div class="policy-card">
+        <div class="card-head">
+          <div class="card-icon"><i class="fa-solid fa-share-nodes"></i></div>
+          <div class="card-meta">
+            <span class="card-num">04 — Partilha de Dados</span>
+            <h2>Partilhamos os Seus Dados?</h2>
+          </div>
+        </div>
+        <p>Os seus dados pessoais <strong>não são vendidos, alugados ou cedidos</strong> a terceiros para fins comerciais. Podemos partilhá-los apenas nas seguintes situações:</p>
+        <ul>
+          <li>Com plataformas de publicidade (Meta, Google) no âmbito da gestão de campanhas</li>
+          <li>Com prestadores de serviços técnicos que nos auxiliam na operação do website</li>
+          <li>Quando exigido por lei, autoridade judicial ou regulatória competente</li>
+        </ul>
+        <div class="highlight-box">
+          <i class="fa-solid fa-circle-info"></i>
+          <p>Todos os parceiros técnicos com quem trabalhamos estão vinculados por acordos de confidencialidade.</p>
+        </div>
+      </div>
+
+      <!-- 05 -->
+      <div class="policy-card">
+        <div class="card-head">
+          <div class="card-icon"><i class="fa-solid fa-cookie-bite"></i></div>
+          <div class="card-meta">
+            <span class="card-num">05 — Cookies</span>
+            <h2>Política de Cookies</h2>
+          </div>
+        </div>
+        <p>Utilizamos cookies para melhorar a sua experiência de navegação. Os cookies permitem-nos:</p>
+        <ul>
+          <li>Memorizar as suas preferências de navegação</li>
+          <li>Analisar o tráfego e comportamento no site (Google Analytics)</li>
+          <li>Exibir anúncios mais relevantes para o seu perfil</li>
+          <li>Garantir a segurança e funcionamento correcto do website</li>
+        </ul>
+        <p style="margin-top: 0.75rem;">Pode gerir ou desactivar os cookies nas definições do seu navegador. Note que algumas funcionalidades do site podem ser afectadas por essa acção.</p>
+      </div>
+
+      <!-- 06 -->
+      <div class="policy-card">
+        <div class="card-head">
+          <div class="card-icon"><i class="fa-solid fa-scale-balanced"></i></div>
+          <div class="card-meta">
+            <span class="card-num">06 — Os Seus Direitos</span>
+            <h2>Os Seus Direitos</h2>
+          </div>
+        </div>
+        <p>Em conformidade com a legislação aplicável, tem o direito de:</p>
+        <ul>
+          <li><strong>Acesso</strong> — solicitar uma cópia dos dados que temos sobre si</li>
+          <li><strong>Rectificação</strong> — corrigir dados incompletos ou incorrectos</li>
+          <li><strong>Apagamento</strong> — solicitar a eliminação dos seus dados pessoais</li>
+          <li><strong>Oposição</strong> — opor-se ao tratamento para fins de marketing</li>
+          <li><strong>Portabilidade</strong> — receber os seus dados em formato legível por máquina</li>
+          <li><strong>Retirada de consentimento</strong> — a qualquer momento, sem prejuízo do tratamento anterior</li>
+        </ul>
+      </div>
+
+      <!-- 07 -->
+      <div class="policy-card">
+        <div class="card-head">
+          <div class="card-icon"><i class="fa-solid fa-lock"></i></div>
+          <div class="card-meta">
+            <span class="card-num">07 — Segurança</span>
+            <h2>Como Protegemos os Seus Dados</h2>
+          </div>
+        </div>
+        <p>Implementamos medidas técnicas e organizacionais adequadas para proteger os seus dados contra acesso não autorizado, perda ou destruição. O nosso website utiliza protocolo <strong>HTTPS</strong> e os dados são armazenados em servidores seguros.</p>
+        <div class="highlight-box">
+          <i class="fa-solid fa-circle-info"></i>
+          <p>Em caso de violação de dados que represente risco para os seus direitos, será notificado no prazo máximo de 72 horas.</p>
+        </div>
+      </div>
+
+    </div>
+
+    <!-- Contact Card -->
+    <div class="contact-card">
+      <div class="contact-card-icon">
+        <i class="fa-solid fa-envelope"></i>
+      </div>
+      <h3>Tem alguma questão sobre privacidade?</h3>
+      <p>Entre em contacto connosco. Respondemos em até 24 horas.</p>
+      <a href="mailto:luiscfrancisco33@gmail.com">
+        <i class="fa-solid fa-paper-plane"></i>
+        luiscfrancisco33@gmail.com
+      </a>
+    </div>
+
+  </main>
+
+<footer>
+
+  <div class="formulario-contacto" id="contacto">
+    <div style="text-align: center; max-width: 600px; margin: 0 auto; padding: 2rem;">
+      <h2 class="contato-h2" style="margin-bottom: 0.3rem; color: #fff;">
+        Pronto para o <span style="color: #45936c">Próximo Nível?</span>
+      </h2>
+      <p style=" margin-bottom: 0.5rem; color: #fff; font-weight: 400; padding: 0.3rem;">
+        Deixe seus dados e eu entrarei em contato em até 24 horas.
+      </p>
+
+      <form
+        action="https://formspree.io/f/xjgeqlyg"
+        method="POST"
+        id="contactForm" style="display: grid; gap: 15px;"
+      >
+
+        <input type="text" name="text" placeholder="Seu nome completo" required>
+        
+        <input type="email" name="email" placeholder="Seu e-mail" required>
+
+      <textarea rows="2" name="message" placeholder="Digite sua mensagem..."></textarea>
+
+        <button type="submit" class="btn_2 btn-primary">
+          Agendar Meu Diagnóstico
+        </button>
+      </form>
+    </div>
+  </div>
+
+  <div class="footer-container">
+  <div class="footer-content ">
+    <h1>Redes Sociais</h1>
+    <div class="icones">
+      <a href="https://wa.me/244955640338"><img src="imag/whatzapp-icon.png" alt="whatzapp-icon" /></a>
+
+      <a href="https://www.facebook.com/luis.c.francisco.lcf"><img src="imag/facebook-icon.png" alt="facebook-icon" /></a>
+
+      <a href="https://www.linkedin.com/in/luís-c-francisco"><img src="imag/linkedlin-icon.png" alt="linkedlin-icon"/> </a>      
+    </div>
+  </div>
+
+  <div class="footer-content">
+    <h1>Links Rápidos</h1>
+    <ul>
+      <li><a href="sobre.html">Sobre</a></li>
+      <li><a href="serviços.html">Serviços</a></li>
+      <li><a href="anuncio.html">Anuncie</a></li>
+      <li><a href="privacidade.html">Privacidade</a></li>
+    </ul>
+  </div>
+
+  <div class="footer-content ">
+    <h1>Contacta-me</h1>
+    <div class="footer-social">
+      <img src="imag/phone-caling-icon.png" alt="phone-icon" width="20px" />
+      <p>(+244) 955 640 338</p>
+      <img src="imag/email-icon.png" alt="email-icon" width="24px" />
+      <p>luiscfrancisco33@gmail.com</p>
+    </div>
+  </div>
+  </div>
+    
+  <div class="div-reservado">
+    <P class="p-reservado">&copy; 2026 Luís Dev - Todos Direitos Reservados.</P>
+  </div>
+
+  <div class="div-reservado hiden">
+    <p></p>
+  </div>  
+  
+  <div class="div-reservado hiden">
+    <p></p>
+  </div>
+
+</footer>
+
+</div>
+  <a href="https://wa.me/244955640338"><img src="imag/icons8-whatsapp.gif" alt="WhatsApp" class="btn-whatt"></a>
+</div>
+
+  <!-- Mobile Nav -->
+  <nav class="mobile-nav">
+    <ul>
+      <li ><a href="index.html"><i class="fa-solid fa-house"></i><span>Home</span></a></li>
+      <li><a href="sobre.html"><i class="fa-solid fa-user-tie"></i><span>Sobre</span></a></li>
+      <li><a href="serviços.html"><i class="fa-solid fa-briefcase"></i><span>Serviços</span></a></li>
+      <li><a href="anuncio.html"><i class="fa-solid fa-bullhorn"></i><span>Anuncie</span></a></li>
+      <li class="active"><a href="privacidade.html"><i class="fa-solid fa-shield-halved"></i><span>Privacidade</span></a></li>
+    </ul>
+  </nav>
+
+  <script src="scrip/lateral.js"></script>
+  <script src="scrip/perfil.js"></script>
+
+</body>
+</html>

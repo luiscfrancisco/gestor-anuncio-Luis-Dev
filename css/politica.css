@@ -1,0 +1,400 @@
+
+
+    /* ─── Hero Banner ────────────────────────────────────── */
+    .priv-hero {
+      background:#102C26;
+      border-radius: 16px;
+      padding: 2.5rem 2rem;
+      margin-top: 1.7rem;
+      margin-bottom: 2.5rem;
+      animation: fadeUp 0.7s ease both;
+    }
+
+    .priv-tag {
+      display: inline-flex;
+      align-items: center;
+      gap: 0.4rem;
+      background-color: rgba(50, 205, 50, 0.041);
+      border: 1px solid rgba(50, 205, 50, 0.3);
+      border-radius: 20px;
+      padding: 0.28rem 0.8rem;
+      font-size: 0.7rem;
+      color: #fff;
+      font-weight: 600;
+      margin-bottom: 1rem;
+      letter-spacing: 0.06em;
+      text-transform: uppercase;
+    }
+
+    .priv-hero h1 {
+      font-size: clamp(1.6rem, 4vw, 2.6rem);
+      font-weight: 800;
+      color: #ffffff;
+      line-height: 1.2;
+      letter-spacing: -0.02em;
+      margin-bottom: 0.8rem;
+    }
+
+    .priv-hero p {
+      font-size: 0.92rem;
+      color: rgba(255, 255, 255, 0.781);
+      line-height: 1.75;
+      max-width: 560px;
+    }
+
+    .priv-meta {
+      display: flex;
+      align-items: center;
+      gap: 1.5rem;
+      margin-top: 1.5rem;
+      flex-wrap: wrap;
+    }
+
+    .priv-meta span {
+      font-size: 0.78rem;
+      color: rgba(255, 255, 255, 0.747);
+      display: flex;
+      align-items: center;
+      gap: 0.4rem;
+    }
+
+    .priv-meta span i {
+      color: #ffffffd5;
+      font-size: 0.78rem;
+      font-weight: 50;
+    }
+
+    .priv-meta span .fa-globe{
+      font-weight: 600;
+    }
+    /* ─── Section Title ──────────────────────────────────── */
+    .section-title {
+      font-family: 'Syne', sans-serif;
+      font-size: 1.5rem;
+      font-weight: 700;
+      color: #17173b;
+      margin-bottom: 1.5rem;
+    }
+
+    .section-title span {
+      color: #102C26;
+    }
+
+    /* ─── Policy Cards ───────────────────────────────────── */
+    .policy-grid {
+      display: flex;
+      flex-direction: column;
+      gap: 1.25rem;
+      margin-bottom: 2.5rem;
+    }
+
+    .policy-card {
+      background-color: #ffffff;
+      border-radius: 16px;
+      padding: 1.75rem;
+      box-shadow: 0 4px 24px rgba(0, 0, 0, 0.06);
+      border: 1px solid rgba(0, 0, 0, 0.07);
+      transition: box-shadow 0.3s ease, border-color 0.3s ease;
+      animation: fadeUp 0.45s ease both;
+    }
+
+    .policy-card:hover {
+      box-shadow: 0 8px 32px rgba(0, 0, 0, 0.1);
+      border-color: rgba(50, 205, 50, 0.25);
+    }
+
+    .policy-card:nth-child(1) { 
+        animation-delay: 0.05s; 
+    }
+
+    .policy-card:nth-child(2) { 
+        animation-delay: 0.10s; 
+    }
+
+    .policy-card:nth-child(3) { 
+        animation-delay: 0.15s; 
+    }
+
+    .policy-card:nth-child(4) { 
+        animation-delay: 0.20s; 
+    }
+
+    .policy-card:nth-child(5) { 
+        animation-delay: 0.25s; 
+    }
+
+    .policy-card:nth-child(6) { 
+        animation-delay: 0.30s; 
+    }
+
+    .policy-card:nth-child(7) { 
+        animation-delay: 0.35s; 
+    }
+
+    .card-head {
+      display: flex;
+      align-items: center;
+      gap: 1rem;
+      margin-bottom: 1rem;
+    }
+
+    .card-icon {
+      width: 46px;
+      height: 46px;
+      background-color: rgba(50, 205, 50, 0.1);
+      border-radius: 12px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      flex-shrink: 0;
+    }
+
+    .card-icon i {
+      font-size: 1.1rem;
+      color: #102C26;
+    }
+
+    .card-meta {
+      display: flex;
+      flex-direction: column;
+      gap: 0.15rem;
+    }
+
+    .card-num {
+      font-size: 0.65rem;
+      font-weight: 700;
+      color: #102C26;
+      letter-spacing: 0.1em;
+      text-transform: uppercase;
+    }
+
+    .card-meta h2 {
+      font-family: 'Syne', sans-serif;
+      font-size: 1rem;
+      font-weight: 700;
+      color: #000;
+    }
+
+    .policy-card p {
+      font-size: 0.9rem;
+      color: #0f0f0f;
+      line-height: 1.75;
+      margin-bottom: 0.75rem;
+    }
+
+    .policy-card p:last-child {
+      margin-bottom: 0;
+    }
+
+    .policy-card p strong {
+      color: #000;
+    }
+
+    .policy-card ul {
+      list-style: none;
+      display: flex;
+      flex-direction: column;
+      gap: 0.45rem;
+      margin-top: 0.25rem;
+    }
+
+    .policy-card ul li {
+      display: flex;
+      align-items: flex-start;
+      gap: 0.6rem;
+      font-size: 0.9rem;
+      color: #0f0f0f;
+      line-height: 1.65;
+    }
+
+    .policy-card ul li::before {
+      content: '▸';
+      color: #102C26;
+      font-size: 0.7rem;
+      margin-top: 0.3rem;
+      flex-shrink: 0;
+    }
+
+    .policy-card ul li strong {
+      color: #2e2e2e;
+    }
+
+    /* ─── Highlight Box ──────────────────────────────────── */
+    .highlight-box {
+      display: flex;
+      align-items: flex-start;
+      gap: 0.75rem;
+      background-color: rgba(50, 205, 50, 0.06);
+      border-left: 3px solid #102C26;
+      border-radius: 0 10px 10px 0;
+      padding: 0.9rem 1.1rem;
+      margin-top: 1rem;
+    }
+
+    .highlight-box i {
+      color: #102C26;
+      font-size: 0.9rem;
+      margin-top: 0.15rem;
+      flex-shrink: 0;
+    }
+
+    .highlight-box p {
+      font-size: 0.875rem;
+      color: #555555;
+      line-height: 1.65;
+      margin-bottom: 0 !important;
+    }
+
+    .highlight-box p strong {
+      color: #17173b !important;
+    }
+
+    /* ─── Contact Card ───────────────────────────────────── */
+    .contact-card {
+      background-color: #ffffff;
+      border-radius: 16px;
+      padding: 2rem;
+      box-shadow: 0 4px 24px rgba(0, 0, 0, 0.06);
+      border: 1px solid rgba(50, 205, 50, 0.2);
+      text-align: center;
+    }
+
+    .contact-card-icon {
+      width: 56px;
+      height: 56px;
+      background-color: rgba(50, 205, 50, 0.1);
+      border-radius: 50%;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      margin: 0 auto 1rem;
+    }
+
+    .contact-card-icon i {
+      font-size: 1.4rem;
+      color: #102C26;
+    }
+
+    .contact-card h3 {
+      font-family: 'Syne', sans-serif;
+      font-size: 1.1rem;
+      font-weight: 700;
+      color: #17173b;
+      margin-bottom: 0.4rem;
+    }
+
+    .contact-card p {
+      font-size: 0.875rem;
+      color: #666666;
+      margin-bottom: 1.25rem;
+    }
+
+    .contact-card a {
+      display: inline-flex;
+      align-items: center;
+      gap: 0.5rem;
+      background-color: #102C26;
+      color: #ffffff;
+      padding: 0.7rem 1.6rem;
+      border-radius: 10px;
+      font-weight: 600;
+      font-size: 0.875rem;
+      text-decoration: none;
+      transition: background-color 0.2s ease, transform 0.2s ease;
+    }
+
+    .contact-card a:hover {
+      background-color: #036b03;
+      transform: translateY(-2px);
+    }
+
+    /* ─── Mobile Navbar ──────────────────────────────────── */
+    .mobile-nav {
+      display: none;
+      position: fixed;
+      bottom: 0;
+      left: 0;
+      right: 0;
+      background-color: #ffffff;
+      border-top: 1px solid rgba(0, 0, 0, 0.08);
+      padding: 0.5rem 0;
+      z-index: 1000;
+    }
+
+    .mobile-nav ul {
+      list-style: none;
+      display: flex;
+      justify-content: space-around;
+    }
+
+    .mobile-nav ul li a {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      gap: 2px;
+      text-decoration: none;
+      color: #222121;
+      font-size: 0.65rem;
+      transition: color 0.3s ease;
+    }
+
+    .mobile-nav ul li a i {
+      font-size: 1.2rem;
+    }
+
+    .mobile-nav ul li.active a,
+    .mobile-nav ul li a:hover {
+      color: #102C26;
+    }
+
+    /* ─── Animação ───────────────────────────────────────── */
+    @keyframes fadeUp {
+      from {
+        opacity: 0;
+        transform: translateY(20px);
+      }
+      to {
+        opacity: 1;
+        transform: translateY(0);
+      }
+    }
+
+    /* ─── Responsivo ─────────────────────────────────────── */
+    @media (max-width: 900px) {
+      .sidebar {
+        display: none;
+      }
+
+      main {
+        margin-left: 0;
+        padding: 1.25rem 1rem 5rem;
+      }
+
+      .mobile-nav {
+        display: block;
+      }
+
+      .profile-dialog {
+        right: -0.5rem;
+        width: calc(100vw - 2rem);
+        max-width: 300px;
+      }
+    }
+
+    @media (max-width: 480px) {
+      .priv-hero {
+        padding: 1.75rem 1.25rem;
+      }
+
+      .priv-hero h1 {
+        font-size: 1.5rem;
+      }
+
+      .priv-meta {
+        gap: 0.75rem;
+      }
+
+      .policy-card {
+        padding: 1.25rem;
+      }
+    }
