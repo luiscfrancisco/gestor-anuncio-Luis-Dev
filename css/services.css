@@ -493,42 +493,104 @@ section .container-home {
   box-shadow: none;
 }
 
-    /* ─── Hero ───────────────────────────────────────────── */
-    .hero {
-      position: relative;
-      border-radius: 10px;
-      overflow: hidden;
-      background-position: center;
-      background-repeat: no-repeat;
-      background-size: cover;
-      min-height: 330px;
-      display: flex;
-      align-items: center;
-      justify-content: center;
-      margin-bottom: 2.5rem;
-    }
+/* ─── Hero ───────────────────────────────────────────── */
+.hero {
+  position: relative;
+  border-radius: 10px;
+  overflow: hidden;
+  min-height: 500px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 2.5rem;
+  background-color: #102c2686;
+}
 
-    .hero::before {
-      content: '';
-      position: absolute;
-      inset: 0;
-      background: rgba(0, 0, 0, 0.63);
-    }
+.hero::before {
+  content: '';
+  position: absolute;
+  inset: 0;
+  z-index: 1;
+  background: rgba(0, 0, 0, 0.473);
+}
 
-    .hero-content {
-      position: relative;
-      z-index: 1;
-      text-align: center;
-      padding: 2rem;
-      animation: fadeUp 0.8s ease both;
-    }
+/* ─── Hero Content ────────────────────────────────────── */
+.hero-content {
+  position: relative;
+  z-index: 2;
+  text-align: center;
+  padding: 2rem;
+  animation: fadeUp 0.8s ease both;
+}
 
-    .hero-content h1 {
-      font-size: clamp(2rem, 5vw, 3.2rem);
-      font-weight: 500;
-      color: #ffffff;
-      letter-spacing: -0.02em;
-    }
+.hero-content h1 {
+  font-size: clamp(2rem, 5vw, 3.2rem);
+  font-weight: 500;
+  color: #ffffff;
+  letter-spacing: -0.02em;
+}
+
+/* ─── Hero Slider ─────────────────────────────────────── */
+.hero-slides {
+  position: absolute;
+  inset: 0;
+  z-index: 0;
+}
+
+.hero-slide {
+  position: absolute;
+  inset: 0;
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  opacity: 0;
+}
+
+.hero-slide.active  { animation: slideFromRight 1s ease forwards; }
+.hero-slide.leaving { animation: slideToLeft   1s ease forwards; }
+
+/* ─── Dots ────────────────────────────────────────────── */
+.hero-dots {
+  position: absolute;
+  bottom: 14px;
+  left: 50%;
+  transform: translateX(-50%);
+  display: flex;
+  gap: 8px;
+  z-index: 2;
+}
+
+.hero-dot {
+  width: 8px;
+  height: 8px;
+  border-radius: 50%;
+  background: rgba(255, 255, 255, 0.35);
+  border: none;
+  cursor: pointer;
+  padding: 0;
+  transition: background 0.3s, transform 0.3s;
+}
+
+.hero-dot.active {
+  background: #ffffff;
+  transform: scale(1.35);
+}
+
+/* ─── Keyframes ───────────────────────────────────────── */
+@keyframes fadeUp {
+  from { opacity: 0; transform: translateY(20px); }
+  to   { opacity: 1; transform: translateY(0);    }
+}
+
+@keyframes slideFromRight {
+  from { opacity: 0; transform: translateX(60px); }
+  to   { opacity: 1; transform: translateX(0);    }
+}
+
+@keyframes slideToLeft {
+  from { opacity: 1; transform: translateX(0);    }
+  to   { opacity: 0; transform: translateX(-60px);}
+}
 
     /* ─── Intro Banner ───────────────────────────────────── */
     .intro-banner {

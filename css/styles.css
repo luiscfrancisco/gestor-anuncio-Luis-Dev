@@ -14,7 +14,7 @@ body {
   font-family: 'Segoe UI', Tahoma;
   background-color: #ffffff;
   width: 100%;
-  height: 100vh;
+  height: 100dvh;
   display: flex;
   flex-direction: column;
 }
@@ -626,15 +626,18 @@ section .container-home {
   line-height: 1.4;
 }
 
-/* --- PORTFÓLIO (CASES) --- */
-
-.section-port{
+/* ─── Portfólio (Cases) ───────────────────────────────── */
+.section-port {
   margin-bottom: 1rem;
+}
+
+.section-port .section-header h2 {
+  font-size: 2rem;
 }
 
 .portfolio-grid {
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+  grid-template-columns: repeat(auto-fit, minmax(min(350px, 100%), 1fr));
   gap: 30px;
 }
 
@@ -649,7 +652,6 @@ section .container-home {
   width: 100%;
   height: 100%;
   object-fit: cover;
-  overflow: hidden;
 }
 
 .case-overlay {
@@ -660,8 +662,8 @@ section .container-home {
   display: flex;
   flex-direction: column;
   justify-content: flex-end;
-  transition: 0.3s;
-  color: #ffffffbb;
+  transition: padding 0.3s;
+  color: rgba(255, 255, 255, 0.73);
 }
 
 .case-card:hover .case-overlay {
@@ -674,10 +676,6 @@ section .container-home {
   font-size: 1.5rem;
   margin: 10px 0;
 }
-
-  #portfolio .section-header h2 {
-    font-size: 2rem;
-  }
 
 /* Estilo da barra de navegacao para mobile */
 
